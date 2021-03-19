@@ -8,7 +8,7 @@ defmodule Pearly.Mixfile do
      name: "Pearly",
      version: @version,
      description: description(),
-     elixir: "~> 1.3",
+     elixir: "~> 1.11",
      deps: deps(),
      package: package(),
      source_url: "https://github.com/mischov/pearly",
@@ -36,7 +36,7 @@ defmodule Pearly.Mixfile do
   end
 
   defp deps do
-    [{:rustler, "~> 0.10.1"},
+    [{:rustler, "~> 0.21"},
 
      # docs
      {:ex_doc, "~> 0.14", only: :docs},
